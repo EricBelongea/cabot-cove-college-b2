@@ -7,4 +7,5 @@ RSpec.describe ResidentCourse, type: :model do
     it {should belong_to :course}
   end
 
+  
 end
