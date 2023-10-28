@@ -11,5 +11,9 @@ resident2 = Resident.create(name: "Dr. Seth Hazlitt", age: 70, occupation: "Town
 
 course1 = resident1.courses.create(name: "Finger Printing")
 course2 = resident1.courses.create(name: "Crime scene science")
-
 course3 = resident2.courses.create(name: "Frankenstein")
+
+course4 = Course.create(name: "Ruby")
+
+resident1.courses << course4
+resident2.courses << course4
