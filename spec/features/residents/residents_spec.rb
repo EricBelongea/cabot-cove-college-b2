@@ -26,10 +26,14 @@ RSpec.describe Resident do
     visit "/residents/#{@resident1.id}"
 
     expect(page).to have_content("Courses")
-    # require 'pry'; binding.pry
+
     expect(page).to have_content("#{@course1.name}")
     expect(page).to have_content("#{@course2.name}")
     expect(page).to_not have_content("#{@course3.name}")
-
   end
+
+  # it 'average age' do
+  #   expect(page).to have_content("Average Age of Residents")
+  #   expect(page).to have_content("#{Resident.age}")
+  # end
 end

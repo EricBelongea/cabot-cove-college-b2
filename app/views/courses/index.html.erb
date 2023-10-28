@@ -1,0 +1,6 @@
+<h1>All courses available</h1>
+<% @courses.each do |course| %>
+<%= require 'pry'; binding.pry %>
+<%= course.name %>
+<%= course.count %><br>
+<% end %>
